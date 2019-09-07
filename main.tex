@@ -1,0 +1,70 @@
+\documentclass[runningheads,a4paper]{llncs}
+
+\usepackage{amssymb}
+\usepackage{titlesec}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+\begin{document}
+
+\mainmatter  % start of an individual contribution
+
+% first the title is needed
+\title{Why OpenStreetMap and Open Government Data integration is unfeasible?}
+
+% the name(s) of the author(s) follow(s) next
+
+\author{Gabriele Orazi\\
+Mat. 205091
+\mailsa\\gabriele.orazi@studenti.unitn.it\\}
+\authorrunning{Why OpenStreetMap and Open Government Data integration is unfeasible?}
+% (feature abused for this document to repeat the title also on left hand pages)
+
+% the affiliations are given next; don't give your e-mail address
+% unless you accept that it will be published
+\institute{
+University of Trento\\
+Department of Information Engineering \& Computer Science\\
+Privacy \& Intellectual Property Rights course, final paper
+}
+
+\maketitle
+
+\begin{abstract}
+OpenStreetMap is a growing reality which represents the strength of crowdsourcing of geodata. The conjunction of that platform with the Open Government Data movement, which is growing too in the last decade, could generate an impressive public database that can be used by third parties to improve the lives of citizens all around the world.
+Nevertheless, this result still seems to be just a daydream. Are licensing conflicts the real main reason for the problem?
+%The abstract should summarize the contents of the paper and should
+%contain at least 70 and at most 150 words. It should be written using the
+%\emph{abstract} environment.
+\keywords{OpenStreetMap, licensing conflicts, CC BY, ODbL, Open Government Data, Open Data, Bologna}
+\end{abstract}
+
+\input{1_intro}
+
+\input{2_OSM}
+
+\input{3_licensing}
+
+\input{4_conflicts}   
+
+\input{5_conclusions}   
+
+\newpage
+% bibliography in bibtex format
+% adding chapter to index
+\addcontentsline{toc}{chapter}{Bibliography}
+
+% style with alphabetical order wrt authors
+\bibliography{biblio}
+\bibliographystyle{unsrt}
+
+\end{document}

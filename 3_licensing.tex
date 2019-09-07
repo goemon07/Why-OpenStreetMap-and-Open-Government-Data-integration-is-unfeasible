@@ -1,0 +1,41 @@
+\section{OSM and licenses}
+In an open-source project such as OSM, licensing is one of the most important aspects to take in consideration.
+Even if the philosophy behind the open-source concept could appear trivial, the reality is slightly different: plenty of licenses has been released to shape in the best way as possible different needs and to satisfy every creator that decided to share something.
+More than for single creators, companies and organizations find difficult to share information in public because of different motivations that can differ a lot concerning the environment that surrounds the company itself.
+A framework has been traced to analyze and understand why and what sustains the need of so many different policies: in the proposed paper\cite{zuiderwijk2014open}, the Dutch governmental organization has been chosen as a case study.
+The outcome underlines that, even if a lot of organizations would like to be more open, clearly seen the real potential, there's another huge slice of institutions that see open data as a threat in terms of legal liability, data misinterpretation and also reputation damage.
+With this assumption, it's easy to understand how the process that needs to be taken is long and divided into so many different steps that go hand-by-hand with how and how much data an organization is willing to share.
+This, for sure, is the main reason that fires the proliferation of so many licenses variance: in most of the cases, such the one taken into account in the following chapters of this paper, the result is \textit{license conflicts}. When a similar situation occurs, suddenly all the spent effort and the strength of open data lose his power.
+
+OSM, one of the biggest open database, has and had to deal with licenses and related \textit{intellectual property} behind managed information. In April 2010, the organization has made a big step, changing retrospectively the used license and implementing what was published a few months earlier in the new license proposal\cite{amos2009new}. The way how this change has been managed is interesting because required to collaborators to accept new terms imposed by the entry license. In next sections an extensive analysis.
+
+\subsection{Change of license: from CC\_BY-SA to ODbL}\label{sec:licensechange}
+Despite the decision of switching license, OSM didn't change at all for the final user. All the changes have been transparent from the outside, but actually, the change has been receipted by contributors, especially the old ones.
+The new and the old licenses (ODbL and CC\_BY-SA respectively) enable a similar usage of OSM data but despite the old license,
+ODbL best suits the needs of the open data collected in the open database.
+
+\subsubsection{Why OSM changed license}~\\
+The last used version of CC\_BY-SA was 2.0. The biggest issue is that the license, as well as all the other versions, is not designed to suit the needs of data collected into a database. Even the Creative Commons (the authority that stands behind CC\_BY), before publishing the version 4.0, reported the incompatibility\footnote{Quote cited in OSM wiki, no more available because of version 4.0 of CC\_BY-SA.}:
+\begin{quote}
+    \textit{Creative Commons does not recommend using Creative Commons licenses for informational databases, such as educational or scientific databases.}
+\end{quote}
+Analyzing the weaknesses of CC\_BY-SA listed in \cite{OSM2010why}, it is reasonable to justify the change:
+\begin{itemize}
+    \item The concept behind \textit{copyright} is perceived completely different depending on jurisdictions: for instance, US considers \textit{information} not copyrightable because of the willing to encourage progress on science and art. The creative expression is the key that distinguishes the intellectual property from simple information. Totally different vision is adopted in the UK, in which copyright is possible simply demonstrating the effort of persons collecting information.
+    Remembering that CC\_BY-SA completely relies on copyright concept and combining what just explained regarding different perspectives of jurisdictions, it's possible to claim that OSM data cannot be protected by CC\_BY-SA.
+    \item Producing a new item, combining a CC\_BY-SA licensed data (for example an OSM map) with another piece of data with no specific license will require to obtain CC\_BY-SA compatibility for the additional data. This makes too difficult (or impossible) to use certain data sources in OSM rendered maps.
+    \item The \textit{Share Alike} concept, introduced with GPL\footnote{GNU General Public License.} by Richard M. Stallman in the open-source and free software context\cite{carver2005share}, impose to who is using OSM data producing something, to share it with CC\_BY-SA license. That will allow, hypothetically, Google to integrate OSM data in their systems, to create and release a painting but, at the same time, to keep hidden the improved data used to create the painting, avoiding to share it.
+    \item CC\_BY-SA comes with an \textit{attribution} obligation, which means that any usage of data should mention all contributor names that stand behind. This has been ignored for ages in OSM because of the practical impossibility of fulfillment, but, actually, it can retain publishers from outside the community to avoid the usage of such data because of they may be blamed of copyright infringement.
+\end{itemize}
+The conjunction of all those issues pushes the community to jump in ODbL, which required much effort but which, in one shot, solved many points that otherwise would have been difficult to solve individually.
+
+\subsubsection{How OSM changed license}~\\
+The transaction between one license to the other may be perceived as a simple step to been accomplish, but actually, for OSM it's been more arduous than what expected.
+The process took more than two years and required to interact with all the contributors (active or not) to ask them permission over data that they have collected before.
+Each community component was asked to accept the new terms. This decision confronted the subject with different choices: \textit{accept} new license terms, which means re-license the past contributions under ODbL license, or \textit{decline} the proposal, denying to OSM to use the contributions and, consequently, to the entire OSM user population.
+If the person had decided to accept the terms, another decision would have had to be taken. The user could both decide to \textit{maintain} the CC\_BY-SA license, continuing to be personally attributed to the work carried out or to consider all contribute \textit{Public Domain}. Legally, the decision had the same value but, ideally, this would have been an important thought towards the open philosophy that distinguishes OSM. Luckily, the community has shown that it is in line with the new policies: in fact, as reported by the OSM itself\footnote{Information taken directly from the \href{https://wiki.openstreetmap.org/wiki/Open_Database_License}{OSM Wiki}.}, only 1\% of the geodata were lost during the transition.
+
+The license change represents the transition from a \textit{federal copyright system}, in which thousands of contributors need to be asked for each license issue, to a \textit{centralized} one, where instead OSM has the power to be considered as a single licensor. Thanks to this, OSM can control and handle all contents properly and easily for future developments, legally and technologically speaking. 
+This is not the only point of strength: ODbL can cover the biggest CC\_BY-SA issue, represented by the concept of copyright, which has been replaced by the \textit{Sui Generis database right}\cite{ginsburg1997copyright}. Insecurity generated by a different interpretation of copyright made by jurisdictions can be avoided and solved thanks to the possibility to recognize the investment that has been made in compiling a database, even if no creativity process has been involved.
+Lastly, even the \textit{Share Alike} issue has been solved. Indeed, ODbL permits to create new contents even when licenses incompatibilities in data sources are present and, most important, impose to share any enhancement that has been performed in the creation of the new content.
+
